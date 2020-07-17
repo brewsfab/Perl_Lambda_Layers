@@ -1,7 +1,7 @@
 FROM centos:latest
 
-ENV MOUNTVOL /outfiles
-RUN mkdir -p $MOUNTVOL
+ENV SAVEDIR /outfiles
+RUN mkdir -p $SAVEDIR
 COPY fullinstall.sh /tmp
 WORKDIR /tmp
 RUN chmod 755 fullinstall.sh && ./fullinstall.sh

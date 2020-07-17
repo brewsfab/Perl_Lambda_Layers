@@ -35,7 +35,7 @@ curl -LO https://gist.githubusercontent.com/brewsfab/78bfa60bcc579af10eb51b3b454
 
 chmod 755 bootstrap perl_runtime.pl.tpl
 
-zip -r $MOUNTVOL/perl.zip perl bin/perl -x perl/site/lib/Paws/\* -x perl/site/lib/Paws.pm
-zip -r $MOUNTVOL/paws.zip perl/site/lib/Paws perl/site/lib/Paws.pm
-zip -r $MOUNTVOL/perl-runtime.zip bootstrap perl_runtime.pl.tpl
+zip -r $SAVEDIR/perl.zip perl bin/perl -x perl/site/lib/Paws/\* -x perl/site/lib/Paws.pm
+zip -r $SAVEDIR/paws.zip perl/site/lib/Paws perl/site/lib/Paws.pm
+zip -r $SAVEDIR/perl-runtime.zip bootstrap perl_runtime.pl.tpl
 
